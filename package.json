@@ -1,0 +1,34 @@
+{
+  "name": "blue_e_robertson_j_autoapp",
+  "version": "1.0.0",
+  "description": "3d car animation app",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmaBlue/Blue_E_Robertson_J_AutoApp.git"
+  },
+  "keywords": [
+    "3d",
+    "animation",
+    "car"
+  ],
+  "author": "Emma Blue and John Robertson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmaBlue/Blue_E_Robertson_J_AutoApp/issues"
+  },
+  "homepage": "https://github.com/EmmaBlue/Blue_E_Robertson_J_AutoApp#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "eslint": "^5.7.0",
+    "sass": "^1.14.3"
+  }
+}
