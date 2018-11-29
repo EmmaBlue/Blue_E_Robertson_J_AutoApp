@@ -25,7 +25,8 @@
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify-js": "0.0.4"
   },
   "dependencies": {
     "eslint": "^5.7.0",

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Auto App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+  
+</head>
+
+  <body>
+    <main id="app">
+     <!-- router view will display the components we want based on route -->
+     <header id="main-header">
+        <div class="navArea">
+            <!-- Start Mobile Nav -->
+            <input type="checkbox" class="nav_box" id="nav-toggle">
+            <label for="nav-toggle" class="nav_but">
+                    <span class="nav_icon">&nbsp;</span>
+            </label>
+            <!-- End Mobile Nav -->
+            <div class="nav_background"></div>
+                <nav class="nav_full">
+                    <h3 class="hidden">Main Navigation</h3>
+                    <ul  class="nav_list">
+                        <li class="nav_item" v-for="item in navItems">
+                            <a href="item.link" class="nav_link">{{item.text}}</a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+        <section id="logo-sect">
+            <h2 class="hidden">Logo</h2>
+            <div><p>Maserati</p></div>
+          </section>
+      </header>
+      <main>
+          <section v-on:click="playVideo" id="video-player">
+            <h2 class="hidden">Video Player</h2>
+              <p>Video</p>
+          </section>
+          <section id="pick-color-sect">
+            <h2 class="hidden">Pick Colour</h2>
+              <div v-on:click="showColor"><p>Red</p></div>
+              <div v-on:click="showColor"><p>Blue</p></div>
+              <div v-on:click="showColor"><p>Grey</p></div>
+              <div v-on:click="showColor"><p>White</p></div>
+          </section>
+          <section id="pick-spec-sect">
+            <h2>Specifications</h2>
+                  <div v-on:click="showSpec"><p>Power</p></div>
+                  <div v-on:click="showSpec"><p>Speed</p></div>
+                  <div v-on:click="showSpec"><p>Acceleration</p></div>
+                  <div v-on:click="showSpec"><p>Engine</p></div>
+                  <div v-on:click="showSpec"><p>Traction</p></div>
+                  <div v-on:click="showSpec"><p>Torque</p></div>
+        </section>
+      </main>
+    <footer>
+    </footer>
+</main>
+     <!-- we can display other components around our router-view -->
+     <!-- for example we could display a footer component here or a -->
+     <!-- header component that displays navigation above -->
+     <script src="js/main.js"></script>
+  </body>
+</html>
