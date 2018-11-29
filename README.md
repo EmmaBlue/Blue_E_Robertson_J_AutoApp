@@ -30,6 +30,10 @@ $ git clone https://github.com/EmmaBlue/Blue_E_Robertson_J_AutoApp.git
 
 $ cd Blue_E_Robertson_J_AutoApp
 
+# Install all relevant node modules
+
+$npm install
+
 ```
 
 And you’re done!
